@@ -1,0 +1,268 @@
+/* IMPORTACIONES */
+@import "colores";
+
+/* MIXINS */
+@mixin hover--none-color-bold{
+    &:hover {
+        text-decoration: none;
+        color: $colorHover;
+        font-weight: bold;
+    }
+}
+
+@mixin lista-black-border{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/*-------- ESTILO --------------------------------------*/
+
+/* header */
+body{
+    background-color: $colorFondo;
+}
+nav{
+    .nav__titulo{
+        cursor: pointer;
+        transition: 0.1s;
+        @include hover--none-color-bold();
+    }
+}
+
+/* main */
+
+h2{
+    margin-top: 10px;
+}
+main {
+    /* Presentación */
+    .principal {
+        background-image: url("../img/tienda2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 10px 0 10px 0;
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .principal__h2 {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.1s;
+            @include hover--none-color-bold();
+        }
+
+        .principal__texto__inicioSesion {
+            @include lista-black-border();
+            margin-bottom: 20px
+        }
+
+        .principal__texto__lista{
+            @include lista-black-border();
+            ul {
+                padding: 0 30px;
+                list-style: disc;
+            }
+        }
+
+    }
+    
+    @media (min-width: 500px){
+        .principal__texto{
+            width: 500px;
+        }
+    }
+
+    @media (min-width: 800px){
+        .principal__texto__inicioSesion{
+            width: 800px;
+        }
+    }
+
+    @media (min-width: 800px){
+        .principal__texto__lista{
+            width: 800px;
+        }
+    }
+    
+    /* Carrusel */
+
+    .carrusel {
+
+        .carrusel__texto {
+            a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.1s;
+                @include hover--none-color-bold();
+            }
+        }
+
+        .carrusel__imagenes {
+            width: 50%;
+            margin: auto;
+    
+            img {
+                width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho del contenedor */
+                height: auto; /* Mantener la proporción de aspecto original */
+                filter: brightness(40%)
+              }
+        }
+    }
+
+    
+    /* Mapita */
+    .mapa{
+        width: 100%;
+        height: auto;
+    }
+    @media (min-width: 500px){
+        .mapa{
+            width: 500px;
+            height: 300px;
+        }
+    }
+    
+    /* Forms */
+    .formulario{
+        margin: 0 auto;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+            button{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .linkRegistro {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.1s;
+            @include hover--none-color-bold();
+
+        button{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media (min-width: 500px){
+        .formulario{
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .listaContacto ul li{
+        border-bottom: 1px solid rgb(213, 213, 213);
+        background-color: $colorFondo;
+    }
+
+    /* Catalogo Grid */
+
+    .catalogoGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        .list-group-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .card-title {
+            text-align: center;
+        }
+        
+        .card-text {
+            text-align: center;
+        }
+        
+        .btn-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    .card {
+        margin-top: 20px;
+        transition: 0.1s;
+        &:hover{
+            transform: scale(1.05,1.05);
+        }
+    }
+    
+    @media (min-width: 1000px){
+        .catalogoGrid {
+            grid-template-columns: 340px 340px 340px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}
+
+
+
+/* footer */
+.footer-grid {
+    background-color: $colorFooter;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: 200px;
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.1s;
+        @include hover--none-color-bold();
+    }
+
+    
+}
+
+@media (min-width: 400px) {
+    .footer-grid {
+        grid-template-columns: 200px 200px;
+    }
+}

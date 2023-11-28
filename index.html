@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestra tienda de discos en formato CD y descubre una amplia selección de álbumes que abarcan géneros musicales variados. Encuentra tus artistas favoritos y revive la experiencia musical clásica con nuestra colección de CDs de alta calidad. ¡Sumérgete en el sonido analógico y construye tu propia biblioteca musical con los mejores éxitos y joyas ocultas en formato CD en JoyCD!">
+    <meta name="keywords" content="CDs musicales, Álbumes en CD, Compra de discos, Tienda de música en CD, Géneros musicales en CD, Colección de CDs, Tienda de discos online, Música en formato físico, Tienda de CD en línea, Mejores álbumes en CD">
+    <meta name="favicon">
+    <!-- Conección con CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Home JoyCD</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand nav__titulo" href="index.html">JoyCD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <!-- NAV -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/inicio-sesion.html">Inicia Sesión</a></li>
+                    </ul>
+                </div>
+
+              
+              <!-- Buscador de discos -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca tu disco" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+
+            </div>
+        </nav>
+    </header>
+<!-- Main------------------------------------------------------------------------------------------ -->
+    <main>
+        <!-- Presentación -->
+        <div class="principal">
+            <h2 data-aos="fade-up">Quienes somos</h2>
+            <p class="lead principal__texto" data-aos="fade-up">JoyCD es una tienda de discos formato CD y vinilos en la ciudad de Santiago, fundada, administrada y creada únicamente por José Pablo Becker, así de pulento. Contáctate con nosotros con el siguiente <a href="html/contacto.html">link</a></p>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="carrusel" data-aos="flip-left">
+          <div class="text-center carrusel__texto">
+            <h2 data-aos="fade-right">Revisa nuestro <a id="link-catalogo" href="html/catalogo.html">Catálogo</a></h2>
+            <p data-aos="fade-right">Tenemos una gran variedad de estilos, géneros, bandas, lo que necesites.</p>
+          </div>
+
+          <div id="carouselExampleRide" class="carousel slide carrusel__imagenes" data-bs-ride="true" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/deftones.jpg" class="d-block w-100" alt="adrenaline">
+              </div>
+              <div class="carousel-item">
+                <img src="img/beastie boys.jpg" class="d-block w-100" alt="around the fur">
+              </div>
+              <div class="carousel-item">
+                <img src="img/alice in chains.jpg" class="d-block w-100" alt="white pony">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mapa y demases -->
+
+        <div class="text-center" data-aos="zoom-in-down"> 
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en Av. Providencia 666-69-72</p>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4619.459947237685!2d-70.61315587665382!3d-33.424466331528905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1696714906841!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Usted se baja del metro y camina hacia mi tiendita.</p>
+        </div>
+
+
+    </main>
+<!-- Footer---------------------------------------------------------------------------------------- -->
+    <footer class="footer-grid">
+        <div><p>Términos y condiciones</p></div>
+        <div><p><a href="html/contacto.html">Contacto</a></p></div>
+        <div><p>Ubicación: Av. Providencia 666-69-72</p></div>
+        <div><p>Todos los derechos reservados</p></div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

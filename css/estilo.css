@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* IMPORTACIONES */
+/* MIXINS */
+/*-------- ESTILO --------------------------------------*/
+/* header */
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+nav .nav__titulo {
+  cursor: pointer;
+  transition: 0.1s;
+}
+nav .nav__titulo:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+
+/* main */
+h2 {
+  margin-top: 10px;
+}
+
+main {
+  /* Presentación */
+  /* Carrusel */
+  /* Mapita */
+  /* Forms */
+  /* Catalogo Grid */
+}
+main .principal {
+  background-image: url("../img/tienda2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .principal .principal__h2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+main .principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+}
+main .principal a:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+main .principal .principal__texto__inicioSesion {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+main .principal .principal__texto__lista {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+main .principal .principal__texto__lista ul {
+  padding: 0 30px;
+  list-style: disc;
+}
+@media (min-width: 500px) {
+  main .principal__texto {
+    width: 500px;
+  }
+}
+@media (min-width: 800px) {
+  main .principal__texto__inicioSesion {
+    width: 800px;
+  }
+}
+@media (min-width: 800px) {
+  main .principal__texto__lista {
+    width: 800px;
+  }
+}
+main .carrusel .carrusel__texto a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+}
+main .carrusel .carrusel__texto a:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+main .carrusel .carrusel__imagenes {
+  width: 50%;
+  margin: auto;
+}
+main .carrusel .carrusel__imagenes img {
+  width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto original */
+  filter: brightness(40%);
+}
+main .mapa {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  main .mapa {
+    width: 500px;
+    height: 300px;
+  }
+}
+main .formulario {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+main .formulario button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main .linkRegistro {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+}
+main .linkRegistro:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+main .linkRegistro button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@media (min-width: 500px) {
+  main .formulario {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+main .listaContacto ul li {
+  border-bottom: 1px solid rgb(213, 213, 213);
+  background-color: rgb(230, 230, 230);
+}
+main .catalogoGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .catalogoGrid .list-group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .catalogoGrid .card-title {
+  text-align: center;
+}
+main .catalogoGrid .card-text {
+  text-align: center;
+}
+main .catalogoGrid .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card {
+  margin-top: 20px;
+  transition: 0.1s;
+}
+main .card:hover {
+  transform: scale(1.05, 1.05);
+}
+@media (min-width: 1000px) {
+  main .catalogoGrid {
+    grid-template-columns: 340px 340px 340px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* footer */
+.footer-grid {
+  background-color: rgb(48, 52, 52);
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px;
+}
+.footer-grid a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.footer-grid a:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+
+@media (min-width: 400px) {
+  .footer-grid {
+    grid-template-columns: 200px 200px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
