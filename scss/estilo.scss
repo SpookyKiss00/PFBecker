@@ -36,6 +36,9 @@ h2{
 }
 main {
     /* Presentación */
+    .principal_inicio{
+        @include lista-black-border();
+    }
     .principal {
         background-image: url("../img/tienda2.jpg");
         background-size: cover;
@@ -53,6 +56,11 @@ main {
         .principal__h2 {
             background-color: rgba(0, 0, 0, 0.6);
             border-radius: 8px;
+        }
+
+        .principal__texto{
+            @include lista-black-border();
+            margin-bottom: 20px 
         }
 
         a {

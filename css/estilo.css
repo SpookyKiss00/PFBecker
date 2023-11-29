@@ -29,6 +29,10 @@ main {
   /* Forms */
   /* Catalogo Grid */
 }
+main .principal_inicio {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
 main .principal {
   background-image: url("../img/tienda2.jpg");
   background-size: cover;
@@ -44,6 +48,11 @@ main .principal {
 main .principal .principal__h2 {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
+}
+main .principal .principal__texto {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 main .principal a {
   color: white;
