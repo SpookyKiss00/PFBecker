@@ -107,13 +107,19 @@ main .carrusel .carrusel__texto a:hover {
   font-weight: bold;
 }
 main .carrusel .carrusel__imagenes {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 main .carrusel .carrusel__imagenes img {
-  width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho del contenedor */
+  width: 600px; /* Hacer que las imágenes ocupen el 100% del ancho del contenedor */
   height: auto; /* Mantener la proporción de aspecto original */
   filter: brightness(40%);
+}
+@media (min-width: 890px) {
+  main .carrusel .carrusel__imagenes {
+    width: 890px;
+    height: 500px;
+  }
 }
 main .mapa {
   width: 100%;
